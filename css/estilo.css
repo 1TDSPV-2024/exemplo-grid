@@ -46,6 +46,34 @@
 }
 
 
+@media only screen and (max-width:390px){
+
+    .container{
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .container :nth-child(n+1){
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+}
+
+/* @media midia - screen/speech/readers/print operador lógico[and, or] (condição min-width:450px){
+    seletor + regra css
+    Ex:
+    p{
+        background-color:#ff0000;
+    }
+} */
+
+/* @media only screen and (max-width:600px){
+    body{
+        font-size: 42px;
+    }
+} */
+
+
 /* .container .box-5{
     background-color: red;
 } */
